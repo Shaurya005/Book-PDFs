@@ -1,0 +1,80 @@
+For a hibernate project, you're gonna need to have a JDK and Java IDE.
+We'll also need to have a database server installed.
+We'll make use of MySQL here. And then finally, you're gonna need to have the Hibernate JAR files and JDBC Driver.
+
+Go to dev.mysql.com/downloads and then click on MySQL Community Server 
+and from there click on Download Windows MySQL Installer MSI and download Web version of Windows MSI Installer. It's a lightweight version and hence very small in size.
+
+Now install MySQL from your Downloads directory - 
+
+Choose `Develope Default` in Setup Type
+Check MySQL Workbench out of all Product listed in following screen and click Execute.
+Then click Next and proceed with coming pages executing and downloading required files, setting MySQL root password, etc.
+
+To verify your installation log into MySQL Workbench with set password above and see the demo data present there.
+
+Setup our Database table:-
+
+We have two scripts that are available in a source code download (spring-and-hibernate-source-code/hibernate-demo/sql-scripts directory).
+The first script is 01-create-user.sql and the second one is 02-student-tracker.sql
+
+The first script 01-create-user.sql is gonna create a new MySQL user for our application, the user ID will be hbstudent and password will be hbstudent. 
+Also it gives all the privileges to this user. And our app will use this to communicate with the MySQL database.
+
+Click on Folder icon in the left most of Query Window open and select first script 01-create-user.sql from our source code downloaded.
+Click on yellow yellow lightening bolt on left to execute the code and perform operation. Down we can see green boxes which shows those statements got executed successfully.
+
+Now go ahead and close this root connection, and create a new connection for this student to verify that this student was created successfully
+and we can actually log in with that student.
+
+Create a new connection name here by clicking on little plus icon on main window and name it hbstudent. We can give any name for the connection.
+But for the user name, we have to give hbstudent, just like we had in our script, and what I'd like to do is click this little test connection button at the bottom.
+And, they'll prompt us for the password, again it's the same hbstudent, and then click on OK. Then we should see the success.
+
+Our next script is the 02-student-tracker.sql and it's main purpose is to actually create a new database table.
+This table is called student, and it's gonna have four columns: the ID, the first name, the last name, and the email address.
+And the ID will actually be the primary key, and we'll set the ID to auto increment. And that's the purpose of this SQL code.
+
+Now follow above steps or go to File/Open SQL Script to open 02-student-tracker.sql from downloaded source code and execute that script.
+
+So to see our table on right hand side, Right click in SCHEMAS window of Navigator panel and click 'Refresh All'.
+
+
+
+
+
+Setup Hibernate in eclipse:-
+
+Create Eclipse Project and then Download Hibernate Files
+Download MySQL JDBC Driver
+Add JAr files to Eclipse Project Build path.
+
+In March 2022, a new version of Hibernate 6 was released. Hibernate 6 has support for Jakarta EE 9.
+Basically, they renamed some of the packages from javax.* to jakarta.*, and this is a breaking change.
+Spring 5 currently does not support the new package renaming in Jakarta EE 9. As a result, Spring 5 does not currently work on Hibernate 6.
+
+So when we build our applications, we need to use Hibernate 5 for our Spring 5 apps. So currently at July 2022, we need to use Hibernate 5 for our Spring 5 apps.
+
+On eclipse, set perspective from Windows Tab to Java Perspective. Then click File > New > Java Project.
+
+Right Click on newly created project name and create a new folder 'lib'. We'll add our Hibernate JAR files and JDBC JAR files to this folder.
+
+Download Hibernate Files from www.luv2code.com/hibernate-download. Go to lib/required directory inside it after unzipping it. These are all Jar files required as a bare minimu to use hibernate.
+
+Copy all and paste into our lib directory of Project. 
+
+As we know, Hibernate makes use of JDBC in the background, and we're talking to MySQL.
+So we need to actually get the JDBC driver for MySQL and also add it to our project.
+
+Go to dev.mysql.com and click on Downloads tab there and then scroll down to choose `MySQL Community (GPL) Downloads`. Then click on Connector/J which is connector for Java i.e. they're JDBC Drivers.
+
+Now in Select Operating System dropdown, select Platform independent and then click on Download button for `Platform Independent (Architecture Independent), ZIP Archive'.
+Open that folder on unzipping it and copy only one Jar File present inside and paste into our lib directory.
+
+We actually have to add these JAR files to the project's class path. So simply do a right click on my project, and choose Properties.
+Click on Java Build Path option on the left. And then select Libraries tab in the centre and then click on Classpath. Add all jar files of lib directory then.
+
+Now in our project, we have new item called Reference Libraries. It conains all JAR files that are on our class path. And so these should be the same list of JAR files as in our lib directory.
+
+
+

@@ -1,0 +1,10 @@
+IntelliJ IDEA
+
+Ctrl + B 		- 	Go To Declaration. Navigate to the initial declaration of the instantiated class, called method, or field.
+Ctrl + / 		- 	Add/Remove line-comment.
+Ctrl + Shift + / 	- 	Add/Remove multi-line Comment.
+Ctrl + Alt + L 	-	Reformat the whole file or the selected fragment according to the current code style settings.
+
+VS Code 
+
+

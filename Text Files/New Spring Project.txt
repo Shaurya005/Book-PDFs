@@ -1,0 +1,54 @@
+For a normal Spring Project:
+
+Connect Tomcat Server to Eclipse
+Set perspective as Java from Windows tab.
+Create a new Java Project from File tab. Choose 'Don't Create` Option on Create module-infor.java dialogue
+Create new folder with name 'lib' with right click on project name to keep your jar files.
+
+Go to repo.spring.io and click on 'Artifacts' and then navigate to following folder system - libs-release > org > springframework > spring.
+
+There we'll have all versions of spring that were released since then. Expand the most recent version and then click on file with 'dist.zip' at the last.
+Now click on the visible URL to file link to download the jar files.
+
+After unzipping that file, copy all the jar files present inside libs directory of that file and then paste into our `lib` directory.
+
+Now we need to add jar files to Java Build Path, effectively adding it to the Classpath. Right click on project name > Properties > Java Build Path. 
+Select 'Libraries' at the top and then choose Classpath. Don't choose module Path.
+
+Finally click Add Jars button and select all Jar files from the lib directory of our project. Apply and Close.
+
+
+For a Spring MVC Project:
+
+Step 1: Add configurations to file: WEB_INF/web.xml
+
+1. Configure Spring MVC Dispatcher Servlet (Dispatcher Servlet is a part of core Spring framework)
+2. Set up URL mappings to Spring MVC Dispatcher Servlet
+
+Step 2: Add configurations to file: WEB_INF/spring-mvc-demo-servlet.xml
+
+3. Add support for Spring component scanning
+4. Add support for conversion, formatting and validation
+5. Configure Spring MVC View Resolver (How we display the pages and where are the pages located).
+
+Creating a new Spring MVC Project and set up JAR Files:-
+
+Change the perspective from Windows tab to Java EE.
+Click on File > New > Dynamic Web Project.
+Type Project name and in Dynamic web module version option select 3.0 to remain consistent.
+
+Click Next and Select the first item there 'src/main/java' and remove that and click on Add Folder and type 'src' there.
+Click Next and for Content directory, we can change the directory name to WebContent and click Finish then.
+
+Go to WebContent/WEB-INF/lib directory of newly created mvc project which will be empty now.
+
+Copy all core Spring Jar files from libs directory of previous downloaded spring framework directory and paste it in above lib directory. 
+By putting them in the WEB-INF/lip directory, they're automatically on our build path / class path. No need to manually configure Build Path / Classpath.
+
+Now, there's some additional files that we're going to need. Copy over some jar files (only the two JSTL files out of three) 
+from the Udemy source code download (solution-code-spring-mvc-config-files/spring-mvc/starter-files/spring-mvc-demo/lib) and finally paste in our WEB-INF/lib directory.
+
+Copy two starter files from downloaded solution-code-spring-mvc-config-files/spring-mvc/starter-files/spring-mvc-demo/config directory i.e. spring-mvc-demo-servlet.xml and web.xml.
+Paste them directly in our WEB-INF directory.
+
+As we have prefix WEB-INF/view/ in our spring-mvc-demo-servlet.xml so add a new folder with name 'view' inside WEB-INF directory.

@@ -1,0 +1,45 @@
+Layout Validation option on the right most part of Android Studio screen.
+Difference b/w Design view and Blue Print view when an overlapping view is there over another view.
+dp - density independent pixels
+sp - sizeable pixels
+Naming convention of files in Android Studio - 
+Difference b/w margin and padding and its effects.
+Adding vector and png images to drawable folder manually.
+Compressing a png image by using option 'Convert to webp' after right click on image.
+In android:src="@drawable/any_image we can also use any color simply like android:src="@color/purple_100
+Property adjustViewBounds for an image. It works with layout_width = "wrap_content"
+Property scaleType for an image.
+
+FrameLayout works on principle of stack i.e. on LIFO property. It doesn't make any alignment with the views. By default views will be overlapping each other.
+So whatever view we have on last decoration will be on the very top of views and whatever we have on the starting UI will be on the bottom of views.
+Different between gravity and layout_gravity for views.
+Using two properties for any attribute in a view by using bar sign '|' like android:layout_gravity = centre_horizontal|bottom
+Overlapping image views with the Frame Layout by using margin.
+
+Relative Layout - We have LIFO property here as well.
+
+layout_centreInParent attribute
+layout_above attribute
+layout_alignTop
+layout_alignParentTop / Bottom / Start / End / Left / Right
+layout_toLeftOf / layout_toStartOf
+layout_toRightOf / layout_toEndOf
+layout_below
+
+We use @+id/ while defining id because it converts the ID into integer number internally.
+
+As far as the performance is concerned, ConstraintLayout is much better than RelativeLayout. It's a modern layout and does ease out your work a lot.
+You won't be needing nested layout here, you can do everything using a single Constraiint Layout.
+
+When we use more number of nested layout with Linear Layout then the performance will definetely get effected and in that case it's recommended to use relative or constraint layout.
+But in the case you don't need very much nesting in your layouts then linear Layout is the best for the performance.
+The default Layout that you get when you create any Activity is Constraint Layout. 
+
+Prefer to use UI editor for Constraint Layout rather than code part to make changes.
+
+matchConstraint in width and height.
+
+Scroll Layout / Scroll View
+
+layout_fillViewport = "true"
+styles.xml for default button color
