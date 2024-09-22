@@ -1,0 +1,15 @@
+Hello, how are you? We are going to see the gender of the adjective. In Spanish,
+adjectives can be masculine or feminine.
+For example, when a masculine adjective ends in o, we form
+the feminine by adding the vowel a: americano (American, masc.) - americana (American -fem.), mexicano (Mexican, masc.) -
+mexicana (Mexican -fem.) For example, my (male) American friend; my (female) American friend.
+On the other hand, there are adjectives that end in consonant in masculine.
+In these cases we add an a to form the feminine: español (Spanish -masc.)
+española (Spanish -fem.); alemán (German -masc.) -alemana (German -fem.), francés (French -masc.) - francesa (French -fem.).
+For example, the Spanish teacher (masc.); the Spanish teacher (fem.).
+Finally, there are adjectives that do not change. When a masculine adjective
+ends in e , in a, or in i, the feminine remains
+the same: estadounidense (American), masculine and feminine, American.
+Vietnamita (Vietnamese), for a woman and a man. Marroquí (Moroccan),
+the same for a woman and for a man. For example, my Canadian neighbour (masc.),
+canadian my neighbour (fem.).

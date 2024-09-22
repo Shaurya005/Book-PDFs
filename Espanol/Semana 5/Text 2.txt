@@ -1,0 +1,4 @@
+¡Cuidado! Vamos a ver qué pasa cuando las palabras de y el
+aparecen juntas. Las dos cambian a una única palabra: del.
+Tenemos el ejemplo venimos del cine. Cuidado aquí, venimos de el cine
+no es correcto. Venimos del cine.

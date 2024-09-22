@@ -1,0 +1,6 @@
+With forty (already seen), fifty, sixty, seventy, eighty and ninety
+the numbers are build equal: Fifty-one, fifty-two, etc.
+And then we have hundred, which could be a combination with the five
+that is one hundred and five. With the ten: One hundred and ten.
+With the twenty-one: One hundred and twenty-one. With the fifty-one
+(which is already regular): One hundred and fifty-one.
